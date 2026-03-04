@@ -1,0 +1,133 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN9bcbBf9JVa4TU1q+C/YYF",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/gzafra267-jpg/PROGCOM_B_2026/blob/main/ejercicios%20del%2016%20al%2025%20con%20for%20y%20while%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "16"
+      ],
+      "metadata": {
+        "id": "36xlbSzIS-aC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 25,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tLBRlFd0SkDd",
+        "outputId": "48f67aaf-eb31-4918-891b-2b5856fad398"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese un número y vea sus multiplos  5\n",
+            " los multiplos  de 5 por 1 son: 5\n",
+            " los multiplos  de 5 por 2 son: 10\n",
+            " los multiplos  de 5 por 3 son: 15\n",
+            " los multiplos  de 5 por 4 son: 20\n",
+            " los multiplos  de 5 por 5 son: 25\n",
+            " los multiplos  de 5 por 6 son: 30\n",
+            " los multiplos  de 5 por 7 son: 35\n",
+            " los multiplos  de 5 por 8 son: 40\n",
+            " los multiplos  de 5 por 9 son: 45\n",
+            " los multiplos  de 5 por 10 son: 50\n"
+          ]
+        }
+      ],
+      "source": [
+        "num=int(input(\"Ingrese un número y vea sus multiplos  \"))\n",
+        "for i in range (1,11):\n",
+        " print(f\" los multiplos  de {num} por {i} son: {num*i}\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "c=1\n",
+        "print(\"Tabla del 2\")\n",
+        "while c<=10:\n",
+        " print(f\"2x{c}={2*c}\")\n",
+        " c+=1\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sED9q_boVT_Y",
+        "outputId": "245adfbc-d787-4243-a6a1-1d108e1c2937"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Tabla del 2\n",
+            "2x1=2\n",
+            "2x2=4\n",
+            "2x3=6\n",
+            "2x4=8\n",
+            "2x5=10\n",
+            "2x6=12\n",
+            "2x7=14\n",
+            "2x8=16\n",
+            "2x9=18\n",
+            "2x10=20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "17"
+      ],
+      "metadata": {
+        "id": "CFMfJOMCXaSO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "WFsW_pq3XbaW"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
