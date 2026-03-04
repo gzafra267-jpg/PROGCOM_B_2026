@@ -1,0 +1,257 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMndKAdJQIXEpK4rrupH39b",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/gzafra267-jpg/PROGCOM_B_2026/blob/main/for%20y%20while%20notas%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#ESTRUCTURA DE REPETICIÓN\n",
+        "1. for. Cuando se sabe cuántas veces se debe repetir una acción.\n",
+        "2. while. No se sabe cuántas veces se repite la acción.\n",
+        "\n",
+        "##1. FOR\n",
+        "Sintaxis general en python\n",
+        "\n",
+        "for (variable) in (algo):\n",
+        " se repite una acción\n",
+        "\n",
+        "algo\n",
+        "* in range(n): quiero repetir n veces\n",
+        "* in range(CI,CF,P): Quiero repetir desde CI, hasta CF-1, con paso p\n",
+        "* in (lista, diccionario): Cuando quiero iterar cada elemento dentro de la lista/diccionario\n",
+        "* each (lista, diccionario): Cuando quiero iterar cada elemento dentro de la lista/diccionario"
+      ],
+      "metadata": {
+        "id": "EAtb-qX5JUdZ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**forma 1 **"
+      ],
+      "metadata": {
+        "id": "ZiIQrVVuGIz7"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        " #Quiero repertir n veces\n",
+        " for i in range(9)\n",
+        " print(f\"Hay {i+1} personas en el salón\")"
+      ],
+      "metadata": {
+        "id": "dDCxEsqaGOdk"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "**forma dos **"
+      ],
+      "metadata": {
+        "id": "ujliSBgZG3JC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(1,10):\n",
+        "  print(f\"Hay {i} personas en el salón\")"
+      ],
+      "metadata": {
+        "id": "TdwBQt-7Grfa"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dias = int(input(\"Ey!! cuántos dias falta para tu cumpleaños!?\"))\n",
+        "for i in range (dias,0,-1):\n",
+        "  print(f\"Faltan {i} días para tu cumpleaños \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Mt1wPUKHG6Lq",
+        "outputId": "48078f8c-a57b-409c-b1e8-c067df1c38d5"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ey!! cuántos dias falta para tu cumpleaños!?5\n",
+            "Faltan 5 días para tu cumpleaños \n",
+            "Faltan 4 días para tu cumpleaños \n",
+            "Faltan 3 días para tu cumpleaños \n",
+            "Faltan 2 días para tu cumpleaños \n",
+            "Faltan 1 días para tu cumpleaños \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Sintaxis en java\n",
+        "''''\n",
+        "for(int variable; variable = VI; variable<VF +1; variable=varieble+paso){\n",
+        "  Lo que se vaya a repertir\n",
+        "}\n",
+        "''''\n",
+        "Donde variable será definida"
+      ],
+      "metadata": {
+        "id": "-wbMFXe0Jb14"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#WHILE\n",
+        "sintaxis\n",
+        "'''''\n",
+        "while (VARIABLE=CI):\n",
+        " lo que se va a repetir\n",
+        " modificador de CI (si esto no se hace bien crea un bucle infinito)\n",
+        "'''''\n",
+        "\n",
+        "**OJO**\n",
+        "  -while arranca si CI es verdadera\n",
+        "   modificadores de CI: pregunta, contador, acumulador, cambio de variable.\n"
+      ],
+      "metadata": {
+        "id": "0H3DxSExL5X2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "c1=0\n",
+        "c2=0\n",
+        "c3=0\n",
+        "c4=0\n",
+        "nulo=0\n",
+        "voto=int(input(\"Ingrese el número de su candidato (1-3) y 0 para voto en blanco\"))\n",
+        "if voto==1: c1=c1+1\n",
+        "elif voto==2: c2=c2+1\n",
+        "elif voto==3: c3=c3+1\n",
+        "elif voto==0:  c4+=1\n",
+        "else: nulo+=1\n",
+        "\n",
+        "print(nulo,\"el voto que ingreso no será valido \")\n",
+        "print(c1 ,\": De personas votaron por el candidato número 1 \")\n",
+        "print(c2 ,\" :De personas votaron por el candidato número 2 \")\n",
+        "print(c3 ,\": De personas votaron por el candidato número 3\")\n",
+        "print(c4 ,\": De personas votaron por el voto en blanco \")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IGKiwZbCMxjX",
+        "outputId": "73d1961e-4149-4db5-ceab-0034ce10814c"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el número de su candidato (1-3) y 0 para voto en blanco1\n",
+            "0 el voto que ingreso no será valido \n",
+            "1 : De personas votaron por el candidato número 1 \n",
+            "0  :De personas votaron por el candidato número 2 \n",
+            "0 : De personas votaron por el candidato número 3\n",
+            "0 : De personas votaron por el voto en blanco \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "c1=0\n",
+        "c2=0\n",
+        "c3=0\n",
+        "nulo=0\n",
+        "votos=\"s\"\n",
+        "while votos==\"s\":\n",
+        " voto=int(input(\"Ingrese el número de su candidato (1-3) y 0 para voto en blanco\"))\n",
+        " if voto==1: c1=c1+1\n",
+        " elif voto==2: c2=c2+1\n",
+        " elif voto==3: c3=c3+1\n",
+        " elif voto==0:  c4+=1\n",
+        " else: nulo+=1\n",
+        " votos=input(\"Hay mas votos? s para si, n para no: \")\n",
+        " votos=votos[0].lower()\n",
+        " print(\"\")\n",
+        "print(nulo,\"el voto que ingreso no será valido \")\n",
+        "print(c1 ,\": De personas votaron por el candidato número 1 \")\n",
+        "print(c2 ,\" :De personas votaron por el candidato número 2 \")\n",
+        "print(c3 ,\": De personas votaron por el candidato número 3\")\n",
+        "print(c4 ,\": De personas votaron por el voto en blanco \")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8Wgm7Cs_P-_M",
+        "outputId": "43a981e9-2388-41e7-8222-790524be09c2"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el número de su candidato (1-3) y 0 para voto en blanco2\n",
+            "Hay mas votos? s para si, n para no: s\n",
+            "\n",
+            "Ingrese el número de su candidato (1-3) y 0 para voto en blanco5\n",
+            "Hay mas votos? s para si, n para no: n\n",
+            "\n",
+            "1 el voto que ingreso no será valido \n",
+            "0 : De personas votaron por el candidato número 1 \n",
+            "1  :De personas votaron por el candidato número 2 \n",
+            "0 : De personas votaron por el candidato número 3\n",
+            "0 : De personas votaron por el voto en blanco \n"
+          ]
+        }
+      ]
+    }
+  ]
+}
